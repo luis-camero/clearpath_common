@@ -27,8 +27,10 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-## The ROS distrbution this package has been bloomed for
-ROS_DISTRO = 'jazzy'
+import os
 
-## Standard installation path for ROS distributions
+# The active ROS distribution
+ROS_DISTRO = os.environ.get('ROS_DISTRO', 'jazzy')
+
+# Standard installation path for ROS distributions
 ROS_DISTRO_PATH = f'/opt/ros/{ROS_DISTRO}/'

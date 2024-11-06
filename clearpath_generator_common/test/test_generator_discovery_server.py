@@ -29,6 +29,10 @@ import os
 import shutil
 
 from ament_index_python.packages import get_package_share_directory
+from clearpath_config.common.types.exception import (
+    UnsupportedAccessoryException,
+    UnsupportedPlatformException,
+)
 from clearpath_generator_common.discovery_server.generator import DiscoveryServerGenerator
 
 
@@ -49,6 +53,10 @@ class TestRobotLaunchGenerator:
             try:
                 rlg = DiscoveryServerGenerator(os.path.dirname(dst))
                 rlg.generate()
+            except UnsupportedAccessoryException as e:
+                print(f'Unsupported accessory. {e}')
+            except UnsupportedPlatformException as e:
+                print(f'Unsupported platform. {e}')
             except Exception as e:
                 errors.append("Sample '%s' failed to load: '%s'" % (
                     sample,
