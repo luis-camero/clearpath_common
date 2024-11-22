@@ -171,7 +171,7 @@
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
           </xacro:if>
           <xacro:unless value="$(arg is_sim)">
-            <plugin>clearpath_platform/A200Hardware</plugin>
+            <plugin>clearpath_hardware_interfaces/A200Hardware</plugin>
             <param name="wheel_diameter">0.3302</param>
             <param name="max_accel">5.0</param>
             <param name="max_speed">1.0</param>
