@@ -66,7 +66,7 @@ class LaunchGenerator(BaseGenerator):
 
         self.platform_launch_file = LaunchFile(
             name='platform',
-            package=self.pkg_clearpath_platform,
+            package=self.pkg_clearpath_common,
             args=[
               ('setup_path', self.setup_path),
               ('use_sim_time', 'false'),
