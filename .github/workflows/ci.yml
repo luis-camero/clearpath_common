@@ -60,7 +60,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           pip install yq
-          apt-get install jq
+          sudo apt-get install jq
 
           echo "Get labels, head branch, and base branch"
           labels=$(gh pr view "$NUMBER" --json labels -q '.labels|map(.name)')
