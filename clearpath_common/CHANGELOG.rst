@@ -2,8 +2,8 @@
 Changelog for package clearpath_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-11-25)
+------------------
 * Added minimum version.
 * Remove all references to clearpath_platform
 * Move platform.launch.py to clearpath_common metapackage

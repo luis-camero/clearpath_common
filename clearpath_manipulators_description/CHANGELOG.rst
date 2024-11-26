@@ -2,8 +2,8 @@
 Changelog for package clearpath_manipulators_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-11-25)
+------------------
 * Add UR arm (`#110 <https://github.com/clearpathrobotics/clearpath_common/issues/110>`_)
 * Contributors: luis-camero
 
