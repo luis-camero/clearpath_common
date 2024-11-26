@@ -2,6 +2,12 @@
 Changelog for package clearpath_manipulators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added minimum version.
+* Fix controller names and kinematics (`#109 <https://github.com/clearpathrobotics/clearpath_common/issues/109>`_)
+* Contributors: Tony Baltovski, luis-camero
+
 0.3.4 (2024-10-08)
 ------------------
 
