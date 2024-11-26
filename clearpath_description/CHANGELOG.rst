@@ -2,6 +2,11 @@
 Changelog for package clearpath_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added minimum version.
+* Contributors: Tony Baltovski
+
 0.3.4 (2024-10-08)
 ------------------
 
