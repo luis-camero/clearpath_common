@@ -2,8 +2,8 @@
 Changelog for package clearpath_platform_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-11-25)
+------------------
 * [clearpath_platform_description] Fixed gazebo_controllers param file. (`#107 <https://github.com/clearpathrobotics/clearpath_common/issues/107>`_)
 * Remove all references to clearpath_platform
 * Add collision tags for MoveIt to avoid these objects (`#108 <https://github.com/clearpathrobotics/clearpath_common/issues/108>`_)

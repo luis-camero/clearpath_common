@@ -2,8 +2,8 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-11-25)
+------------------
 * Added minimum version.
 * Remove all references to clearpath_platform
 * Add support for Axis cameras (`#113 <https://github.com/clearpathrobotics/clearpath_common/issues/113>`_)
