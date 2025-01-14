@@ -29,8 +29,10 @@ import os
 import shutil
 
 from ament_index_python.packages import get_package_share_directory
-from clearpath_config.common.types.exception import UnsupportedAccessoryException
-from clearpath_config.common.types.exception import UnsupportedPlatformException
+from clearpath_config.common.types.exception import (
+    UnsupportedAccessoryException,
+    UnsupportedPlatformException,
+)
 from clearpath_generator_common.bash.generator import BashGenerator
 
 
