@@ -2,8 +2,8 @@
 Changelog for package clearpath_platform_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.1 (2025-01-16)
+------------------
 * [clearpath_platform_description] Fixed R100 rear cover colour. (`#145 <https://github.com/clearpathrobotics/clearpath_common/issues/145>`_)
 * Contributors: Tony Baltovski
 
