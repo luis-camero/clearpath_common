@@ -2,6 +2,16 @@
 Changelog for package clearpath_manipulators_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add PTZ sim support (`#125 <https://github.com/clearpathrobotics/clearpath_common/issues/125>`_)
+  * Now that axis_camera is released via OSRF, depend on the official package, remove duplicate meshes
+  * Rename Gazebo plugins for Jazzy compatibility
+  * Modify Axis camera URDFs to using the axis_camera meshes. This lets us control the gazebo topics. Fix the GZ topic names. Camera data is now visible in the simulation
+  * Add joint controllers for the pan & tilt actuators. This provides velocity control over the simulated camera
+* Rename ign\_ -> gz\_ for gazebo dependencies, comment-out missing jazzy dependencies (for now)
+* Contributors: Chris Iverach-Brereton, Tony Baltovski, luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Add UR arm (`#110 <https://github.com/clearpathrobotics/clearpath_common/issues/110>`_)

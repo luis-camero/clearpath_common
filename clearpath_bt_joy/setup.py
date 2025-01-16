@@ -35,7 +35,7 @@ package_name = 'clearpath_bt_joy'
 
 setup(
     name=package_name,
-    version='0.3.4',
+    version='1.0.0',
     packages=[
         package_name,
     ],

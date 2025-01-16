@@ -2,6 +2,24 @@
 Changelog for package clearpath_sensors_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix test errors (`#132 <https://github.com/clearpathrobotics/clearpath_common/issues/132>`_)
+  * Add continue clause to the unsupported device/platform exceptions so we don't try any further tests with them
+  * Fix URDF parameters so the source CI passes with the axis cameras
+* Add plugins to get the PTZ joint states out of gazebo and into ROS (`#126 <https://github.com/clearpathrobotics/clearpath_common/issues/126>`_)
+* Add PTZ sim support (`#125 <https://github.com/clearpathrobotics/clearpath_common/issues/125>`_)
+  * Now that axis_camera is released via OSRF, depend on the official package, remove duplicate meshes
+  * Rename Gazebo plugins for Jazzy compatibility
+  * Modify Axis camera URDFs to using the axis_camera meshes. This lets us control the gazebo topics. Fix the GZ topic names. Camera data is now visible in the simulation
+  * Add joint controllers for the pan & tilt actuators. This provides velocity control over the simulated camera
+* Update simulation support for Jazzy (`#117 <https://github.com/clearpathrobotics/clearpath_common/issues/117>`_)
+  * Rename gazebo plugins to use new gz nomenclature instead of ign/ignition. Use stamped velocity messages.
+  * Restructure the twist_mux yaml file to be more legible, remove the parameters that are overwritten by the launch file anyway
+  * Put use_stamped back just for the sake of being explicit. Add use_stamped directly to the launch file
+  * Fix the tests to catch unsupported platforms & accessories
+* Contributors: Chris Iverach-Brereton, Luis Camero, Tony Baltovski, luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Add support for Axis cameras (`#113 <https://github.com/clearpathrobotics/clearpath_common/issues/113>`_)

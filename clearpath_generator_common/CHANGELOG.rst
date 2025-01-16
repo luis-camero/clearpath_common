@@ -2,6 +2,49 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* clearpath_generator_common/clearpath_generator_common/zenoh_router/generator.py (`#146 <https://github.com/clearpathrobotics/clearpath_common/issues/146>`_)
+* Use the .profile field for the Zenoh router config; don't add a new variable just for that (`#143 <https://github.com/clearpathrobotics/clearpath_common/issues/143>`_)
+* Catch the new unsupported platform/accessory exceptions raised by the generator so the tests pass, use the envar when setting the default value of ROS_DISTRO (`#104 <https://github.com/clearpathrobotics/clearpath_common/issues/104>`_)
+  Co-authored-by: Tony Baltovski <tbaltovski@clearpathrobotics.com>
+* Add Zenoh support (`#138 <https://github.com/clearpathrobotics/clearpath_common/issues/138>`_)
+  * Add generator for zenoh router service script
+  * Add the ZENOH_ROUTER_CONFIG_URI envar to the generated bash file, populated with either the default path or the user-specified one as needed
+* Add `enable_ekf` launch parameter to platform -> localization launch files. Disable the EKF node if enable_ekf is false. (`#133 <https://github.com/clearpathrobotics/clearpath_common/issues/133>`_)
+* Fix test errors (`#132 <https://github.com/clearpathrobotics/clearpath_common/issues/132>`_)
+  * Add continue clause to the unsupported device/platform exceptions so we don't try any further tests with them
+  * Fix URDF parameters so the source CI passes with the axis cameras
+* Add the A200 Observer backpack attachment (`#122 <https://github.com/clearpathrobotics/clearpath_common/issues/122>`_)
+  * Add the A200 Observer backpack attachment
+* Fix sensor depends (`#129 <https://github.com/clearpathrobotics/clearpath_common/issues/129>`_)
+  * Remove the package initializations that depend on robot packages
+  * Add a copy of the imu_filter parameters from clearpath_sensors to clearpath_control. Change the default IMU filter config path to point to this file. Remove more unneeded initializations of clearpath_robot packages
+* A300 VCAN (`#130 <https://github.com/clearpathrobotics/clearpath_common/issues/130>`_)
+  * A300 vcan1
+  * Set vcan0 to be default can interface for lynx control
+  * Fix to prevent including the same package multiple times
+  * Added filename argument to LaunchFile
+  * Linting
+* Add PTZ sim support (`#125 <https://github.com/clearpathrobotics/clearpath_common/issues/125>`_)
+  * Now that axis_camera is released via OSRF, depend on the official package, remove duplicate meshes
+  * Rename Gazebo plugins for Jazzy compatibility
+  * Modify Axis camera URDFs to using the axis_camera meshes. This lets us control the gazebo topics. Fix the GZ topic names. Camera data is now visible in the simulation
+  * Add joint controllers for the pan & tilt actuators. This provides velocity control over the simulated camera
+* Add a placeholer URDF for the AMP mount, update meshes (`#123 <https://github.com/clearpathrobotics/clearpath_common/issues/123>`_)
+  * Add a placeholer URDF for the AMP mount; STL & final dimensions to come at a later date
+  * Default to treaded wheels, flip all the wheel models so the treads visually go in the correct direction
+  * Update the top plate, chassis, livery, smooth wheel, and status light meshes. Closes CPE87-2102
+  * Catch unsupported platforms/accessories in vcan generation tests
+* Update simulation support for Jazzy (`#117 <https://github.com/clearpathrobotics/clearpath_common/issues/117>`_)
+  * Rename gazebo plugins to use new gz nomenclature instead of ign/ignition. Use stamped velocity messages.
+  * Restructure the twist_mux yaml file to be more legible, remove the parameters that are overwritten by the launch file anyway
+  * Put use_stamped back just for the sake of being explicit. Add use_stamped directly to the launch file
+  * Fix the tests to catch unsupported platforms & accessories
+* Fix the discovery server to use the new path too
+* Create `ros` module to contain default distro & default setup.bash path to make updating distributions easier
+* Contributors: Chris Iverach-Brereton, Luis Camero, Roni Kreinin, Tony Baltovski, luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Added minimum version.

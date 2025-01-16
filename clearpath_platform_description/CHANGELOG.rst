@@ -2,6 +2,41 @@
 Changelog for package clearpath_platform_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add the A200 Observer backpack attachment (`#122 <https://github.com/clearpathrobotics/clearpath_common/issues/122>`_)
+  * Add the A200 Observer backpack attachment
+* [clearpath_platform_description] Fixed Ridgeback R100 rear light colour. (`#127 <https://github.com/clearpathrobotics/clearpath_common/issues/127>`_)
+* Add PTZ sim support (`#125 <https://github.com/clearpathrobotics/clearpath_common/issues/125>`_)
+  * Now that axis_camera is released via OSRF, depend on the official package, remove duplicate meshes
+  * Rename Gazebo plugins for Jazzy compatibility
+  * Modify Axis camera URDFs to using the axis_camera meshes. This lets us control the gazebo topics. Fix the GZ topic names. Camera data is now visible in the simulation
+  * Add joint controllers for the pan & tilt actuators. This provides velocity control over the simulated camera
+* Add a placeholer URDF for the AMP mount, update meshes (`#123 <https://github.com/clearpathrobotics/clearpath_common/issues/123>`_)
+  * Add a placeholer URDF for the AMP mount; STL & final dimensions to come at a later date
+  * Default to treaded wheels, flip all the wheel models so the treads visually go in the correct direction
+  * Update the top plate, chassis, livery, smooth wheel, and status light meshes. Closes CPE87-2102
+  * Catch unsupported platforms/accessories in vcan generation tests
+* A300 (`#118 <https://github.com/clearpathrobotics/clearpath_common/issues/118>`_)
+  * Add A300 meshes
+  * Move A300 meshes
+  * Add A300 URDF
+  * Added A300 control configuration files
+  * Remove unstamped parameter, deprecated
+  * Use clearpath_hardware_interface LynxHardware
+  ---------
+  Co-authored-by: Luis Camero <lcamero@clearpathrobotics.com>
+* Add collision tags for MoveIt to avoid these objects (`#108 <https://github.com/clearpathrobotics/clearpath_common/issues/108>`_)
+* Remove all references to clearpath_platform
+* Add collision tags for MoveIt to avoid these objects (`#108 <https://github.com/clearpathrobotics/clearpath_common/issues/108>`_)
+* Update simulation support for Jazzy (`#117 <https://github.com/clearpathrobotics/clearpath_common/issues/117>`_)
+  * Rename gazebo plugins to use new gz nomenclature instead of ign/ignition. Use stamped velocity messages.
+  * Restructure the twist_mux yaml file to be more legible, remove the parameters that are overwritten by the launch file anyway
+  * Put use_stamped back just for the sake of being explicit. Add use_stamped directly to the launch file
+  * Fix the tests to catch unsupported platforms & accessories
+* Rename ign\_ -> gz\_ for gazebo dependencies, comment-out missing jazzy dependencies (for now)
+* Contributors: Chris Iverach-Brereton, Luis Camero, Roni Kreinin, Tony Baltovski, luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * [clearpath_platform_description] Fixed gazebo_controllers param file. (`#107 <https://github.com/clearpathrobotics/clearpath_common/issues/107>`_)
