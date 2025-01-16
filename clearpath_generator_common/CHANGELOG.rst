@@ -2,8 +2,8 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-16)
+------------------
 * clearpath_generator_common/clearpath_generator_common/zenoh_router/generator.py (`#146 <https://github.com/clearpathrobotics/clearpath_common/issues/146>`_)
 * Use the .profile field for the Zenoh router config; don't add a new variable just for that (`#143 <https://github.com/clearpathrobotics/clearpath_common/issues/143>`_)
 * Catch the new unsupported platform/accessory exceptions raised by the generator so the tests pass, use the envar when setting the default value of ROS_DISTRO (`#104 <https://github.com/clearpathrobotics/clearpath_common/issues/104>`_)

@@ -2,8 +2,8 @@
 Changelog for package clearpath_manipulators_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-16)
+------------------
 * Add PTZ sim support (`#125 <https://github.com/clearpathrobotics/clearpath_common/issues/125>`_)
   * Now that axis_camera is released via OSRF, depend on the official package, remove duplicate meshes
   * Rename Gazebo plugins for Jazzy compatibility

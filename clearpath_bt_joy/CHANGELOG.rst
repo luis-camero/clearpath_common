@@ -2,8 +2,8 @@
 Changelog for package clearpath_bt_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-16)
+------------------
 * Improve joy telep support (`#131 <https://github.com/clearpathrobotics/clearpath_common/issues/131>`_)
   * Update description, add bluez dependency
   * Add the quality_cutoff parameter to all of the PS4 configuration files

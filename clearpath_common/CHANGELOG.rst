@@ -2,8 +2,8 @@
 Changelog for package clearpath_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-16)
+------------------
 * Add `enable_ekf` launch parameter to platform -> localization launch files. Disable the EKF node if enable_ekf is false. (`#133 <https://github.com/clearpathrobotics/clearpath_common/issues/133>`_)
 * Added minimum version.
 * Remove all references to clearpath_platform
