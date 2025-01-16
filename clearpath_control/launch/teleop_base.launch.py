@@ -81,7 +81,9 @@ def generate_launch_description():
                     ('twist_server/update', 'twist_marker_server/update')],
         parameters=[
             config_interactive_markers,
-            {'use_sim_time': use_sim_time}],
+            {'use_sim_time': use_sim_time},
+            {'use_stamped_msgs': True},
+        ],
         output='screen',
     )
 
@@ -90,14 +92,16 @@ def generate_launch_description():
         executable='twist_mux',
         output='screen',
         remappings={
-            ('cmd_vel_out', 'platform/cmd_vel_unstamped'),
+            ('cmd_vel_out', 'platform/cmd_vel'),
             ('/diagnostics', 'diagnostics'),
             ('/tf', 'tf'),
             ('/tf_static', 'tf_static'),
         },
         parameters=[
             config_twist_mux,
-            {'use_sim_time': use_sim_time}]
+            {'use_sim_time': use_sim_time},
+            {'use_stamped': True},
+        ]
     )
 
     ld = LaunchDescription()
