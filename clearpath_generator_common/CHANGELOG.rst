@@ -2,8 +2,8 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2025-01-15)
+------------------
 * Ewellix Lift (`#136 <https://github.com/clearpathrobotics/clearpath_common/issues/136>`_)
   Ewellix Lift
   -  Remove upper_joint

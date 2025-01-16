@@ -2,8 +2,8 @@
 Changelog for package clearpath_platform_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2025-01-15)
+------------------
 * Fix color of rear lights
 * Add flag to disable platform controllers for manipulation controller manager
 * [clearpath_platform_description] Fixed Ridgeback R100 rear light colour. (`#127 <https://github.com/clearpathrobotics/clearpath_common/issues/127>`_)
