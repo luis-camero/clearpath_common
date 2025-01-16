@@ -2,6 +2,19 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Ewellix Lift (`#136 <https://github.com/clearpathrobotics/clearpath_common/issues/136>`_)
+  Ewellix Lift
+  -  Remove upper_joint
+  - Add moveit jpc
+  - Add control for joint position controller
+  - Add hardware parameters
+  - Add lifts to generators
+  - Initial add of Ewellix lift description files
+* Add `enable_ekf` launch parameter to platform -> localization launch files. Disable the EKF node if enable_ekf is false. (`#133 <https://github.com/clearpathrobotics/clearpath_common/issues/133>`_) (`#134 <https://github.com/clearpathrobotics/clearpath_common/issues/134>`_)
+* Contributors: Chris Iverach-Brereton, luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Added minimum version.

@@ -2,6 +2,18 @@
 Changelog for package clearpath_manipulators_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Ewellix Lift (`#136 <https://github.com/clearpathrobotics/clearpath_common/issues/136>`_)
+  Ewellix Lift
+  -  Remove upper_joint
+  - Add moveit jpc
+  - Add control for joint position controller
+  - Add hardware parameters
+  - Add lifts to generators
+  - Initial add of Ewellix lift description files
+* Contributors: luis-camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Add UR arm (`#110 <https://github.com/clearpathrobotics/clearpath_common/issues/110>`_)
