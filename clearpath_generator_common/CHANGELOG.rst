@@ -2,6 +2,29 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.0 (2024-11-25)
+------------------
+* Added minimum version.
+* Remove all references to clearpath_platform
+* Add support for Axis cameras (`#113 <https://github.com/clearpathrobotics/clearpath_common/issues/113>`_)
+  * Add axis camera URDFs & meshes
+  * Fix the path for the meshes
+  * Add the AxisCameraDescription class
+  * Remove the axis_camera files, add a dependency on axis_description. Add a new meta-macro that uses the camera type
+  * Use the device_type to set the model for the new description macro
+  * Add the update_rate to the URDF
+  * Add default topic for the URDF
+  * Remove the update_rate parameter; it's not supported by axis_camera
+  * Add the update_rate parameter back to the meta macro, but don't pass it
+  * Add the axis camera URDFs & STLs from axis_description, use the local copies instead of having an external dependency
+  * Add RGBA values for the "black" material, rename it to avoid conflicting with any other material definitions
+* Add UR arm (`#110 <https://github.com/clearpathrobotics/clearpath_common/issues/110>`_)
+* VCAN Rework (`#112 <https://github.com/clearpathrobotics/clearpath_common/issues/112>`_)
+  * VCan service script generator
+  * Use formatted strings to shorten line length and expose variables
+* Add test exception for Zed (`#100 <https://github.com/clearpathrobotics/clearpath_common/issues/100>`_)
+* Contributors: Chris Iverach-Brereton, Luis Camero, Tony Baltovski, luis-camero
+
 0.3.4 (2024-10-08)
 ------------------
 

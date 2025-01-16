@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>clearpath_manipulators</name>
-  <version>0.3.4</version>
+  <version>1.0.0</version>
   <description>MoveIt configuration built around Clearpath Configuration</description>
 
   <author email="lcamero@clearpathrobotics.com">Luis Camero</author>
@@ -14,7 +14,7 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>moveit_planners_chomp</exec_depend>
-  <exec_depend>clearpath_manipulators_description</exec_depend>
+  <exec_depend version_gte="1.0.0">clearpath_manipulators_description</exec_depend>
   <exec_depend>gripper_controllers</exec_depend>
   <exec_depend>moveit_configs_utils</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>
