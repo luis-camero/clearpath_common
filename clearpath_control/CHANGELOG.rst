@@ -2,6 +2,9 @@
 Changelog for package clearpath_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.0 (2025-01-16)
 ------------------
 * Update diff_drive controller settings (`#137 <https://github.com/clearpathrobotics/clearpath_common/issues/137>`_)

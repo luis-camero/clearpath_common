@@ -2,6 +2,9 @@
 Changelog for package clearpath_generator_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.0 (2025-01-16)
 ------------------
 * clearpath_generator_common/clearpath_generator_common/zenoh_router/generator.py (`#146 <https://github.com/clearpathrobotics/clearpath_common/issues/146>`_)

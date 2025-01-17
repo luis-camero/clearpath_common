@@ -2,6 +2,9 @@
 Changelog for package clearpath_sensors_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.0.0 (2025-01-16)
 ------------------
 * Fix test errors (`#132 <https://github.com/clearpathrobotics/clearpath_common/issues/132>`_)

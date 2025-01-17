@@ -2,6 +2,11 @@
 Changelog for package clearpath_bt_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Explicitly use the default qos profile for the quality & cutoff pubs. Reduce the publish rate from 10Hz to 5Hz (on A300-000006 the 10Hz rate was missing deadlines, resulting in a deadlocked controller)
+* Contributors: Chris Iverach-Brereton
+
 2.0.0 (2025-01-16)
 ------------------
 * Improve joy telep support (`#131 <https://github.com/clearpathrobotics/clearpath_common/issues/131>`_)
