@@ -30,6 +30,7 @@ import subprocess
 
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_default
 from rcl_interfaces.srv import GetParameters
 from std_msgs.msg import Bool, Int32
 
@@ -52,8 +53,8 @@ class QualityCutoffNode(Node):
         self.quality_cutoff = self.get_parameter('quality_cutoff').value
 
         # Create our publishers
-        self.stop_pub = self.create_publisher(Bool, 'bt_quality_stop', 10)
-        self.quality_pub = self.create_publisher(Int32, 'quality', 10)
+        self.stop_pub = self.create_publisher(Bool, 'bt_quality_stop', qos_profile_default)
+        self.quality_pub = self.create_publisher(Int32, 'quality', qos_profile_default)
 
         # Get the 'dev' parameter from the joy_node to determine what device we're using
         self.get_logger().info('Waiting for joy_node parameter service...')
@@ -72,11 +73,13 @@ class QualityCutoffNode(Node):
 
         self.mac_addr = self.get_mac()
 
+        # run the timer at 5Hz
+        # originally this was 10Hz, but that resulted in missed deadlines
         if self.mac_addr is not None:
-            self.quality_timer = self.create_timer(0.1, self.check_quality)
+            self.quality_timer = self.create_timer(0.2, self.check_quality)
         else:
             self.get_logger().info(f'Assuming {self.joy_device} is wired; quality check will be bypassed')  # noqa: E501
-            self.quality_timer = self.create_timer(0.1, self.fake_quality)
+            self.quality_timer = self.create_timer(0.2, self.fake_quality)
 
     def get_mac(self):
         if self.joy_device is None:
