@@ -2,8 +2,8 @@
 Changelog for package clearpath_bt_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2025-01-17)
+------------------
 * Explicitly use the default qos profile for the quality & cutoff pubs. Reduce the publish rate from 10Hz to 5Hz (on A300-000006 the 10Hz rate was missing deadlines, resulting in a deadlocked controller)
 * Contributors: Chris Iverach-Brereton
 
