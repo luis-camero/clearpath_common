@@ -2,8 +2,8 @@
 Changelog for package clearpath_bt_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.2 (2025-01-20)
+------------------
 * Add additional logging, replace rate.sleep() with time.sleep(); on boot as part of a systemd job rate.sleep() is never exiting (`#148 <https://github.com/clearpathrobotics/clearpath_common/issues/148>`_)
 * Contributors: Chris Iverach-Brereton
 
