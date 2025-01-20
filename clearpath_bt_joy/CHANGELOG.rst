@@ -2,6 +2,11 @@
 Changelog for package clearpath_bt_joy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add additional logging, replace rate.sleep() with time.sleep(); on boot as part of a systemd job rate.sleep() is never exiting (`#148 <https://github.com/clearpathrobotics/clearpath_common/issues/148>`_)
+* Contributors: Chris Iverach-Brereton
+
 2.0.1 (2025-01-17)
 ------------------
 * Explicitly use the default qos profile for the quality & cutoff pubs. Reduce the publish rate from 10Hz to 5Hz (on A300-000006 the 10Hz rate was missing deadlines, resulting in a deadlocked controller)
