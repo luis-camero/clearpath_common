@@ -78,12 +78,13 @@ jobs:
         with:
           repository: clearpathrobotics/repos-dep-update-action
           ref: 0.0.1
+          path: repos-dep-update-action
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
       - name: Use repos update action
-        uses: ./
+        uses: ./repos-dep-update-action/
         with:
           branch: ${{ steps.extract_branch.outputs.branch }}
           input: dependencies.repos
