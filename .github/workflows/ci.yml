@@ -74,9 +74,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - uses: ros-tooling/setup-ros@v0.7
-        with:
-          required-ros-distributions: humble
       - uses: actions/checkout@v3
         with:
           repository: clearpathrobotics/repos-dep-update-action
@@ -85,11 +82,15 @@ jobs:
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
-      - uses: ./
+      - name: Use repos update action
+        uses: ./
         with:
           branch: ${{ steps.extract_branch.outputs.branch }}
           input: dependencies.repos
           output: updated_dependencies.repos
+      - uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: humble
       - uses: ros-tooling/action-ros-ci@v0.3
         id: action_ros_ci_step
         with:
